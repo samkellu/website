@@ -1,0 +1,20 @@
+a {
+    background-color: powderblue;
+    transition: background-color 0.5s;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    margin: 32px auto;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+.grow:hover {
+    transform: scale(1.5);
+}
