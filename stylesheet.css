@@ -18,6 +18,14 @@ body {
     font-size: 5rem;
 }
 
+.align_middle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
 #name {
     margin:0px;
     height: 5rem;
