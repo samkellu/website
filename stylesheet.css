@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(233,163,127);
     color: white;
     font-family: "Roboto", sans-serif;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
     transform: translateY(-50%);
   }
 
-#name {
+#split {
     margin:0px;
     height: 5rem;
     display: flex;
@@ -34,12 +34,12 @@ body {
     justify-content: space-between;
 }
 
-#github {
+#split_r {
     text-align: right;
     margin-right: 4px;
 }
 
-#instagram {
+#split_l {
     text-align: left;
     margin-left: 4px;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .grow:hover {
-    font-size: 7rem;
+    font-size: 6.4rem;
     color:red;
 }
 

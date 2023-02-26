@@ -1,0 +1,245 @@
+/* LOAD DOWN TRANSITION */
+.transition_down_load_1 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 12;
+    background-color: rgb(219,127,80);
+    transition: all 0.8s ease-in-out;
+}
+
+.transition_down_load_1.active {
+    top: 0;
+}
+
+.transition_down_load_2 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 13;
+    background-color: rgb(127,133,99);
+    transition: all 0.6s ease-in-out;
+}
+
+.transition_down_load_2.active {
+    top: 0;
+}
+
+.transition_down_load_3 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 14;
+    background-color: rgb(90,126,100);
+    transition: all 0.4s ease-in-out;
+}
+
+.transition_down_load_3.active {
+    top: 0;
+}
+
+.transition_down_load_4 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 15;
+    background-color: rgb(65,99,74);
+    transition: all 0.3s ease-in-out;
+}
+
+.transition_down_load_4.active {
+    top: 0;
+}
+
+/* LEAVE DOWN TRANSITIONS */
+
+.transition_down_leave_1 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    height: 100%;
+    background-color: rgb(219,127,80);
+    transition: all 0.3s ease-in-out;
+}
+
+.transition_down_leave_1.active {
+    top: 0;
+}
+
+.transition_down_leave_2 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 13;
+    height: 100%;
+    background-color: rgb(127,133,99);
+    transition: all 0.4s ease-in-out;
+}
+
+.transition_down_leave_2.active {
+    top: 0;
+}
+
+.transition_down_leave_3 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 14;
+    height: 100%;
+    background-color: rgb(90,126,100);
+    transition: all 0.6s ease-in-out;
+}
+
+.transition_down_leave_3.active {
+    top: 0;
+}
+
+.transition_down_leave_4 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    height: 100%;
+    background-color: rgb(65,99,74);
+    transition: all 0.8s ease-in-out;
+}
+
+.transition_down_leave_4.active {
+    top: 0;
+}
+
+/* LOAD UP TRANSITIONS */
+
+.transition_up_load_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 12;
+    background-color: rgb(219,127,80);
+    transition: all 0.8s ease-in-out;
+}
+
+.transition_up_load_1.active {
+    bottom: 0;
+}
+
+.transition_up_load_2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 13;
+    background-color: rgb(127,133,99);
+    transition: all 0.6s ease-in-out;
+}
+
+.transition_up_load_2.active {
+    bottom: 0;
+}
+
+.transition_up_load_3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 14;
+    background-color: rgb(90,126,100);
+    transition: all 0.4s ease-in-out;
+}
+
+.transition_up_load_3.active {
+    bottom: 0;
+}
+
+.transition_up_load_4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 15;
+    background-color: rgb(65,99,74);
+    transition: all 0.3s ease-in-out;
+}
+
+.transition_up_load_4.active {
+    bottom: 0;
+}
+
+/* LEAVE UP TRANSITIONS */
+.transition_up_leave_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 12;
+    background-color: rgb(219,127,80);
+    transition: all 0.3s ease-in-out;
+}
+
+.transition_up_leave_1.active {
+    bottom: 0;
+}
+
+.transition_up_leave_2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 13;
+    background-color: rgb(127,133,99);
+    transition: all 0.4s ease-in-out;
+}
+
+.transition_up_leave_2.active {
+    bottom: 0;
+}
+
+.transition_up_leave_3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 14;
+    background-color: rgb(90,126,100);
+    transition: all 0.6s ease-in-out;
+}
+
+.transition_up_leave_3.active {
+    bottom: 0;
+}
+
+.transition_up_leave_4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: 15;
+    background-color: rgb(65,99,74);
+    transition: all 0.8s ease-in-out;
+}
+
+.transition_up_leave_4.active {
+    bottom: 0;
+}

@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html land="en">
     <head>
-        <title> Test Website </title>
+        <title> Main Page </title>
         <meta charset="UTF-8">
         <meta name="viewport" content ="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet.css"> 
+        <link rel="stylesheet" href="transitions.css"> 
     </head>
 
     <body>
+        <div class="transition_load transition_down_load_1 active"></div>
+        <div class="transition_load transition_down_load_2 active"></div>
+        <div class="transition_load transition_down_load_3 active"></div>
+        <div class="transition_load transition_down_load_4 active"></div>
+
+        <div class="transition_leave transition_down_leave_1"></div>
+        <div class="transition_leave transition_down_leave_2"></div>
+        <div class="transition_leave transition_down_leave_3"></div>
+        <div class="transition_leave transition_down_leave_4"></div>
+        
         <div class="main_div">
             <div class="align_middle">
-                <div id="name">
-                    <div>SAMUEL</div>
+                <div id="split">
+                    <div>SAM&nbsp;</div>
                     <div>KELLY</div>
                 </div>
-                <div id="name">
-                    <div>STUDENT</div>
+                <div id="split">
+                    <div>STUDENT&nbsp;</div>
                     <div>DEV</div>
                 </div>
-                <div id="name">
-                    <div id="github" class="grow">
+                <div id="split">
+                    <div id="split_right" class="grow">
                         <a href="https://github.com/samkellu" target="_blank">GITHUB</a>
                     </div>
                     
-                    <div id="instagram" class="grow">
+                    <div id="split_left" class="grow">
                         <a href="https://www.instagram.com/sam_kelly_/" target="_blank">INSTA</a>
+                    </div>
+                </div>
+                <div id="split"> 
+                    <div id="2pc_left" class="grow">
+                        <a href="./projects.html"> PROJECTS</a>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
