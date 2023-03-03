@@ -11,7 +11,7 @@ body {
     justify-content: center;
     padding: 30px 10px;
     font-family: 'DM Sans', sans-serif;
-    transition: background .4s ease-in;
+    transition: background-color .4s ease-in;
     background-color: rgb(233,163,127);
     color: white;
 }
@@ -19,7 +19,7 @@ body {
 #card-text {
     position: absolute;
     margin:0px;
-    font-size:4rem;
+    font-size: min(7vw, 48px); 
     display: flex;
     bottom: 30px;
     left: 30px;
@@ -33,10 +33,133 @@ body {
 }
 
 .grow:hover {
-    font-size: 6rem;
+    font-size: 4vw;
     color:rgb(151, 187, 228);
 }
 
 a {
     all: unset;
+    cursor: grab;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    left: 0;
+    right: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    margin: auto;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    max-width: 400px;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#c1:checked ~ .cards #card1, #c2:checked ~ .cards #card2, #c3:checked ~ .cards #card3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#c1:checked ~ .cards #card2, #c2:checked ~ .cards #card3, #c3:checked ~ .cards #card1 {
+    transform: translatex(45%) scale(0.6);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#c1:checked ~ .cards #card3, #c2:checked ~ .cards #card1, #c3:checked ~ .cards #card2 {
+    transform: translatex(-45%) scale(0.6);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/* Projects page tabs */
+
+.tab-carousel {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    right: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    margin: auto;
+}
+
+.tabs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#t1:checked ~ .tabs #tab1, #t2:checked ~ .tabs #tab2, #t3:checked ~ .tabs #tab3 {
+    transform: translatex(0) translatey(0);
+    z-index: 3;
+}
+
+#t1:checked ~ .tabs #tab2, #t2:checked ~ .tabs #tab3, #t3:checked ~ .tabs #tab1 {
+    transform: translatex(-2%) translatey(-4%);
+    z-index: 2;
+}
+
+#t1:checked ~ .tabs #tab3, #t2:checked ~ .tabs #tab1, #t3:checked ~ .tabs #tab2 {
+    transform: translatex(-4%) translatey(-8%);
+    z-index: 1;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    margin-bottom: 100px;
+    margin-top: 100px;
 }

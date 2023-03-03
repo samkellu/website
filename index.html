@@ -6,7 +6,6 @@
         <meta name="viewport" content ="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet.css"> 
         <link rel="stylesheet" href="transitions.css"> 
-        <link rel="stylesheet" href="carousel.css"> 
     </head>
 
     <body>
@@ -19,31 +18,35 @@
         <div class="transition_leave transition_down_leave_2"></div>
         <div class="transition_leave transition_down_leave_3"></div>
         <div class="transition_leave transition_down_leave_4"></div>
-
-        <div class="carousel">
-            <input type="radio" name="slider" id="c1" checked>
-            <input type="radio" name="slider" id="c2">
-            <input type="radio" name="slider" id="c3">
-    
-            <div class="cards">
-                <label class="card" for="c1" id="card1">
-                    <img src="images/projectsImg.PNG">
-                    <div id="card-text" class="grow">
-                        <a href="./projects.html"> PROJECTS</a>
-                    </div>
-                </label>
-                <label class="card" for="c2" id="card2">
-                    <img src="images/instaWeb.gif">
-                    <div id="card-text" class="grow">
-                        <a href="https://www.instagram.com/sam_kelly_/" target="_blank">INSTAGRAM</a>
-                    </div>
-                </label>
-                <label class="card" for="c3" id="card3">
-                    <img src="images/githubImg.PNG">
-                    <div id="card-text" class="grow">
-                        <a href="https://github.com/samkellu" target="_blank">GITHUB</a>
-                    </div>
-                </label>
+        
+        <div class="container">
+            <h1 style="font-size: min(7vw, 48px);"> Hi! I'm Sam Kelly </h1>
+            <p style="font-size: min(3vw, 20px);">Bachelor of Advanced Computing student,<br>University of Sydney<br><br></p>
+            <div class="carousel">
+                <input type="radio" name="slider" id="c1" checked>
+                <input type="radio" name="slider" id="c2">
+                <input type="radio" name="slider" id="c3">
+        
+                <div class="cards">
+                    <label class="card" for="c1" id="card1">
+                        <img src="images/projectsImg.PNG">
+                        <div id="card-text" class="grow">
+                            <a href="./projects.html"> PROJECTS</a>
+                        </div>
+                    </label>
+                    <label class="card" for="c2" id="card2">
+                        <img src="images/instaWeb.gif">
+                        <div id="card-text" class="grow">
+                            <a href="https://www.instagram.com/sam_kelly_/" target="_blank">INSTAGRAM</a>
+                        </div>
+                    </label>
+                    <label class="card" for="c3" id="card3">
+                        <img src="images/githubImg.PNG">
+                        <div id="card-text" class="grow">
+                            <a href="https://github.com/samkellu" target="_blank">GITHUB</a>
+                        </div>
+                    </label>
+                </div>
             </div>
         </div>
         <script src="main.js"></script>
