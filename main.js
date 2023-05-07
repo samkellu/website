@@ -27,8 +27,9 @@ window.onload = () => {
             }, 800);
         });
     }
-    reveal();
 }
+
+window.addEventListener("scroll", reveal);
 
 function reveal() {
     var toReveal = document.querySelectorAll(".reveal");
@@ -47,7 +48,6 @@ function reveal() {
     }
 }
 
-window.addEventListener("scroll", reveal);
 
   
 

@@ -18,7 +18,7 @@ body {
     background-position: center;
     position: relative;
     background-size: cover;
-    width: 100%;
+    min-width: 30%;
     height: 60%;
 }
 
