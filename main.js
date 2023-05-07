@@ -27,6 +27,27 @@ window.onload = () => {
             }, 800);
         });
     }
+    reveal();
 }
+
+function reveal() {
+    var toReveal = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < toReveal.length; i++) {
+        var windowHeight = window.innerHeight;
+        // distance to the top of the element from the top of the viewport.
+        var elementTop = toReveal[i].getBoundingClientRect().top;
+        var revealHeight = 150;
+
+        if (elementTop < windowHeight - revealHeight) {
+            toReveal[i].classList.add("active");
+        } else {
+            toReveal[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+
   
 

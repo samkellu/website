@@ -4,12 +4,20 @@
         <title> Projects </title>
         <meta charset="UTF-8">
         <meta name="viewport" content ="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css"> 
+        <link rel="stylesheet" href="projects.css"> 
         <link rel="stylesheet" href="transitions.css"> 
 
     </head>
-
+    
     <body>
+
+        <div class="img-header">
+            <div class="header-text">
+                <h1>PROJECTS</h1>
+                <a href="index.html" style="font-size: 2rem; font-weight: bold">HOME</a>
+            </div>
+        </div>
+
         <div class="transition_load transition_up_load_1 active"></div>
         <div class="transition_load transition_up_load_2 active"></div>
         <div class="transition_load transition_up_load_3 active"></div>
@@ -20,30 +28,60 @@
         <div class="transition_leave transition_up_leave_3"></div>
         <div class="transition_leave transition_up_leave_4"></div>
 
-        <div class="container">
-            <div class="banner">
-                <a href="./index.html" style="left:40px"> HOME</a>
+        <section>
+            <div class="projects">
+                <div class="project reveal left" style="background-color: rgb(219,127,80);">
+                    <div class="project-img-header" style="background-image: url(images/doomCode.PNG)">
+                        <h1>DOOM on Arduino</h1>
+                    </div>
+                    <div class="text-box">
 
-                <h1>PROJECTS</h1>
-            </div>
-            <div class="tab-carousel">
-                <input type="radio" name="slider" id="t1" checked>
-                <input type="radio" name="slider" id="t2">
-                <input type="radio" name="slider" id="t3">
-        
-                <div class="tabs">
-                    <label class="tab" for="t1" id="tab1" style="background-color: rgb(119, 157, 238)">
-                        <p style="padding-top:1px; padding-left:2px;">DoomDuino</p>
-                    </label>
-                    <label class="tab" for="t2" id="tab2" style="background-color: rgb(137, 184, 149)">
-                        <p style="padding-top:1px; padding-left:2px;"">Website</p>
-                    </label>
-                    <label class="tab" for="t3" id="tab3" style="background-color: rgb(241, 149, 206)">
-                        <p style="padding-top:1px; padding-left:2px;"">3D Renderer</p>
-                    </label>
+                        A lightweight version of the original DOOM 3D, written from scratch to run on an ATMega 328p (Arduino).
+                        It utilises a basic raycasting shader (I had to scratch that linear algebra itch...) to render the environment onto a SSD1306 OLED screen.
+                        This project has evolved over time, from an incredibly basic object renderer, into a first person shooter that is slowly becoming more and more reminiscent of the original.
+                        </br>
+                        The game currently supports basic wall textures, movement, depth perception rendering, wall collisions and more, with plans to add enemy NPCs to fight, doors, pickup items etc over the coming year.
+                        This project has been my gateway into the wide and complex world of 3D graphics rendering, and is some of the most enjoyable code I've written over the years.
+                    </div>
+                </div>
+
+                <div class="project reveal right" style="background-color: rgb(127,133,99);">
+                    <div class="project-img-header" style="background-image: url(images/basicSpheres.png)">
+                        <h1>3D Ray-Tracing Shader</h1>
+                    </div>
+                    <div class="text-box">
+
+                        Following from my early tests of 3D rendering in Open GL, and later in my arduino rendering projects, I discovered ray tracing.
+                        This is a current and ongoing project to develop a photorealistic ray-trace shader in HLSL (Direct X), using the Unity game engine.
+                        From the basics of camera projection, ray intersection calculations with basic geometry and tracing to more complex tasks such as mesh rendering, anti aliasing and depth of field,
+                         this project has been a blast to work on and has opened my mind to the wonderful world of compute shaders and graphics.
+                    </div>
+                </div>   
+
+                <div class="project reveal left" style="background-color: rgb(90,126,100);">
+                    <div class="project-img-header" style="background-image: url(images/flowers.png)"">
+                        <h1>Cards.js</h1>
+                    </div>
+                    <div class="text-box">
+                        A new project that has only just begun as of writing this!
+                        This is a collaborative project between myself and some friends, which aims to create a multiplayer card game using javascript, 3js and node.
+                        This is our first step into the world of web full-stack development, and should be a long running project between the four of us.
+                    </div>
+                </div>                
+                
+                <div class="project reveal right" style="background-color: rgb(65,99,74);">
+                    <div class="project-img-header" style="background-image: url(images/night.jpg)">
+                        <h1>This Website</h1>
+                    </div>
+                    <div class="text-box">
+                        This website has been an excellent learning resource for me, as it is my first longterm web development project.
+                        Before this project, I had no experience in JavaScript and very minimal experience of HTML and CSS, and have enjoyed learning about these topics throughout the site's development.
+                        This is an ongoing project aimed at being a portfolio for my projects, both past and current. 
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         
         <script src="main.js"></script>
     </body>

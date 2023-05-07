@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgb(233,163,127);
+    color: white;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.img-header {
+    background-image: url(images/powerlines.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+}
+
+.header-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color:skyblue;
+    transition: 0.2s ease-in-out; 
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 30%;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.project-img-header {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20vh;
+    top: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.text-box {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.projects {
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 100px;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+.right {
+    transform: translateX(100%);
+}
+
+
+.left {
+    transform: translateX(-100%);
+}
+
+.reveal.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
