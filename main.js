@@ -1,8 +1,9 @@
+const links = ["projects.html", "https://www.instagram.com/sam_kelly_/", "https://github.com/samkellu"];
+
 window.onload = () => {
     const tr_load_el = document.querySelectorAll('.transition_load');
     const tr_leave_el = document.querySelectorAll('.transition_leave');
-    const anchors = document.querySelectorAll('a');
-
+    const checkboxes = document.getElementsByName('slider');
     
     setTimeout(() => {
         for (let j = 0; j < tr_load_el.length; j++) {
@@ -10,22 +11,28 @@ window.onload = () => {
         }
     }, 800);
 
-    for (let i = 0; i < anchors.length; i++) {
-        const anchor = anchors[i];
+    for (let checkbox of checkboxes) {
 
-        anchor.addEventListener('click', e => {
-            e.preventDefault();
+        checkbox.onclick = function(e) {
+            for (let c of checkboxes) {
+                if (c == checkbox) {
+                    continue;
+                }
 
-            let target = e.target.href;
-
-            for (let j = 0; j < tr_leave_el.length; j++) {
-                tr_leave_el[j].classList.add('active');
+                c.checked = false;
             }
 
-            setTimeout(() => {
-                window.location.href = target;
-            }, 800);
-        });
+            if (!checkbox.checked) {
+                e.preventDefault();
+                for (let j = 0; j < tr_leave_el.length; j++) {
+                    tr_leave_el[j].classList.add('active');
+                }
+                
+                setTimeout(() => {
+                    window.location.href = checkbox.getAttribute("href");
+                }, 800);
+            }
+        }
     }
 }
 
