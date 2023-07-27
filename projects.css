@@ -19,7 +19,7 @@ body {
     position: relative;
     background-size: cover;
     min-width: 30%;
-    height: 60%;
+    height: 100%;
 }
 
 .header-text {
