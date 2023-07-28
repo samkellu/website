@@ -1,5 +1,3 @@
-const links = ["projects.html", "https://www.instagram.com/sam_kelly_/", "https://github.com/samkellu"];
-
 window.onload = () => {
     const tr_load_el = document.querySelectorAll('.transition_load');
     const tr_leave_el = document.querySelectorAll('.transition_leave');
@@ -32,25 +30,6 @@ window.onload = () => {
                     window.location.href = checkbox.getAttribute("href");
                 }, 800);
             }
-        }
-    }
-}
-
-window.addEventListener("scroll", reveal);
-
-function reveal() {
-    var toReveal = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < toReveal.length; i++) {
-        var windowHeight = window.innerHeight;
-        // distance to the top of the element from the top of the viewport.
-        var elementTop = toReveal[i].getBoundingClientRect().top;
-        var revealHeight = 150;
-
-        if (elementTop < windowHeight - revealHeight) {
-            toReveal[i].classList.add("active");
-        } else {
-            toReveal[i].classList.remove("active");
         }
     }
 }
