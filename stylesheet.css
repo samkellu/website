@@ -89,25 +89,37 @@ video {
     border-radius: 15px;
 }
 
-#c1:checked ~ .cards #card1, #c2:checked ~ .cards #card2, #c3:checked ~ .cards #card3 {
+#c1:checked ~ .cards #card1, #c2:checked ~ .cards #card2, #c3:checked ~ .cards #card3, #c4:checked ~ .cards #card4, #c5:checked ~ .cards #card5 {
     transform: translatex(0) scale(1);
     opacity: 1;
+    z-index: 2;
+}
+
+#c1:checked ~ .cards #card2, #c2:checked ~ .cards #card3, #c3:checked ~ .cards #card4, #c4:checked ~ .cards #card5, #c5:checked ~ .cards #card1 {
+    transform: translatex(45%) scale(0.6);
+    opacity: 0.7;
     z-index: 1;
 }
 
-#c1:checked ~ .cards #card2, #c2:checked ~ .cards #card3, #c3:checked ~ .cards #card1 {
-    transform: translatex(45%) scale(0.6);
+#c1:checked ~ .cards #card3, #c2:checked ~ .cards #card4, #c3:checked ~ .cards #card5, #c4:checked ~ .cards #card1, #c5:checked ~ .cards #card2 {
+    transform: translatex(+70%) scale(0.5);
     opacity: 0.5;
     z-index: 0;
 }
 
-#c1:checked ~ .cards #card3, #c2:checked ~ .cards #card1, #c3:checked ~ .cards #card2 {
+#c1:checked ~ .cards #card4, #c2:checked ~ .cards #card5, #c3:checked ~ .cards #card1, #c4:checked ~ .cards #card2, #c5:checked ~ .cards #card3 {
+    transform: translatex(-70%) scale(0.5);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#c1:checked ~ .cards #card5, #c2:checked ~ .cards #card1, #c3:checked ~ .cards #card2, #c4:checked ~ .cards #card3, #c5:checked ~ .cards #card4 {
     transform: translatex(-45%) scale(0.6);
-    opacity: 0.5;
-    z-index: 0;
+    opacity: 0.7;
+    z-index: 1;
 }
 
-#c1:checked ~ .cards #card1:hover, #c2:checked ~ .cards #card2:hover, #c3:checked ~ .cards #card3:hover {
+#c1:checked ~ .cards #card1:hover, #c2:checked ~ .cards #card2:hover, #c3:checked ~ .cards #card3:hover, #c4:checked ~ .cards #card4:hover, #c5:checked ~ .cards #card5:hover {
     transform: scale(1.05);
     color:rgb(151, 187, 228);
 }
