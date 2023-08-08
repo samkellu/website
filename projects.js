@@ -53,9 +53,3 @@ function changeColour() {
     var b = (80 + (scrollY/document.body.scrollHeight) * 120);
     document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 }
-// 219,127,80
-// 127,133,99
-
-
-  
-
