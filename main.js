@@ -1,4 +1,8 @@
 window.onload = () => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "err.html";
+    }
+
     const tr_load_el = document.querySelectorAll('.transition_load');
     const tr_leave_el = document.querySelectorAll('.transition_leave');
     const checkboxes = document.getElementsByName('slider');
